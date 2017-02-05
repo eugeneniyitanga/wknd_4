@@ -50,7 +50,7 @@ add = fancycalculator.add(10, 6)
 subtract = fancycalculator.subtract(24, 4)
 multiply = fancycalculator.multiply(2,4)
 divide = fancycalculator.divide(15, 3)
-square_root = fancycalculator.square_root(5)
+square_root = fancycalculator.square_root(4)
 
 result = add 
 
@@ -107,7 +107,7 @@ result = square_root
 puts "fancycalculator returned:"
 puts result 
 
-if result == 25 
+if result == 2
 puts "Success"
 
 else 
