@@ -3,6 +3,21 @@
 # bonus: returns a string of all missing letters as a string. ex: find_missing_letter("ace") would return "bd", write your own test.
 
 def find_missing_letter(range)
+  range = range.split("")
+  all_letters = (range[0]..range[-1]).to_a
+  all_letters.each do |letter|
+    if range.include?(letter)
+
+    elsif not range.include?(letter)
+      return letter 
+    end 
+
+    if range == all_letters 
+      return false 
+    end
+  end 
+
+
 
 end
 
