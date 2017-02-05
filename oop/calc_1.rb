@@ -32,23 +32,8 @@ class SimpleCalculator
 
 end
 
-class FancyCalculator
+class FancyCalculator <SimpleCalculator
 
-  def add(first_number, second_number)
-    first_number + second_number
-  end
-
-  def subtract(first_number, second_number)
-    first_number - second_number
-  end
-
-  def multiply(first_number, second_number)
-    first_number * second_number
-  end
-
-  def divide(first_number, second_number)
-    first_number / second_number
-  end
 
   def square_root(number)
     Math.sqrt(number)
@@ -57,4 +42,75 @@ class FancyCalculator
 end
 
 # Write your own driver code below:
+
+simplecalculator = SimpleCalculator.new 
+fancycalculator = FancyCalculator.new 
+
+add = fancycalculator.add(10, 6)
+subtract = fancycalculator.subtract(24, 4)
+multiply = fancycalculator.multiply(2,4)
+divide = fancycalculator.divide(15, 3)
+square_root = fancycalculator.square_root(5)
+
+result = add 
+
+puts "fancycalculator returned:"
+puts result 
+
+if result == 16 
+  puts "Success"
+
+else 
+  "F"
+
+end 
+
+result = subtract 
+
+puts "fancycalculator returned:"
+puts result 
+
+if result == 20 
+  puts "Success"
+
+else 
+  "F"
+end 
+
+result = multiply 
+
+puts "fancycalculator returned:"
+puts result 
+
+if result == 8 
+  puts "Success"
+
+else 
+  "F"
+end 
+
+result = divide 
+
+puts "fancycalculator returned:"
+puts result 
+
+if result == 5 
+  puts "Success"
+
+else 
+  "F"
+end 
+
+result = square_root
+
+
+puts "fancycalculator returned:"
+puts result 
+
+if result == 25 
+puts "Success"
+
+else 
+  "F"
+end 
 
